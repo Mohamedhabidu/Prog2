@@ -116,7 +116,10 @@ def main():
         end= pc()
         time_lista.append(y)
 
-    
+    par1_start= pc()
+    Parallel_111= sphere_volume_parallel1(n,d,np)
+    par1_end= pc()
+    print(f'THE PARALLEL TIME 1= {(par1_end-par1_start)/np}')
     
     #Ex4
     # n = 1000000
