@@ -114,8 +114,8 @@ def main():
         start = pc()
         y = sphere_volume(n,d)
         end= pc()
-        time_lista.append(y)
-    print(f'Sequential_time{mean(time_lista)}')
+        time_lista.append(end-start)
+    print(f'Sequential_time={mean(time_lista)}')
 
 
 
