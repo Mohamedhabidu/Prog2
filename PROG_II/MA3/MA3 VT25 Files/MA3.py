@@ -115,20 +115,21 @@ def main():
         y = sphere_volume(n,d)
         end= pc()
         time_lista.append(y)
+    print(f'Sequential_time{mean(time_lista)}')
+
+
 
     par1_start= pc()
     Parallel_111= sphere_volume_parallel1(n,d,np)
     par1_end= pc()
-    print(f'THE PARALLEL TIME 1= {(par1_end-par1_start)/np}')
+    print(f'THE PARALLEL_TIME_1= {(par1_end-par1_start)/np}')
     
-    #Ex4
-    # n = 1000000
-    # d = 11
-    # start = pc()
-    # sphere_volume(n,d)
-    # stop = pc()
-    # print(f"Ex4: Sequential time of {d} and {n}: {stop-start}")
-    # print("What is parallel time?")
+
+
+    par2_start= pc()
+    Parallel_111 =sphere_volume_parallel2(n, d, np)
+    par2_end= pc()
+    print(f'THE PARALLEL_TIME_2= {(par2_end-par2_start)/np}')
 
     
     
